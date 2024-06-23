@@ -45,8 +45,8 @@
                     </td>
                     <td>{{$v->created_at}}</td>
                     <td>
-                        <a href="{{route('dept.edit',['id'=>$v->id])}}" class="btn btn-info btn-xs">编辑</a>
-                        <a href="javascript:;" data-href="{{route('dept.destroy',['id'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
+                        <a href="{{route('dept.edit',['dept'=>$v->id])}}" class="btn btn-info btn-xs">编辑</a>
+                        <a href="javascript:;" data-href="{{route('dept.destroy',['dept'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
                     </td>
                   </tr>
                   @endforeach

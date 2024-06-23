@@ -40,8 +40,8 @@
                     </td>
                     <td>{{$v->created_at}}</td>
                     <td>
-                        <a href="{{route('emp.edit',['id'=>$v->id])}}" class="btn btn-info btn-xs">编辑</a>
-                        <a href="javascript:;" data-href="{{route('emp.destroy',['id'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
+                        <a href="{{route('emp.edit',['emp'=>$v->id])}}" class="btn btn-info btn-xs">编辑</a>
+                        <a href="javascript:;" data-href="{{route('emp.destroy',['emp'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
                     </td>
                   </tr>
                   @endforeach

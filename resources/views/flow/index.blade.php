@@ -35,8 +35,8 @@
                     <td>{{$v->created_at}}</td>
                     <td>
                         <a href="/flow/flowchart/{{$v->id}}" class="btn btn-info btn-xs">流程图</a>
-                        <a href="{{route('flow.edit',['id'=>$v->id])}}" class="btn btn-primary btn-xs">编辑</a>
-                        <a href="javascript:;" data-href="{{route('flow.destroy',['id'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
+                        <a href="{{route('flow.edit',['flow'=>$v->id])}}" class="btn btn-primary btn-xs">编辑</a>
+                        <a href="javascript:;" data-href="{{route('flow.destroy',['flow'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
                     </td>
                   </tr>
                   @endforeach

@@ -29,8 +29,8 @@
                     <td>{{$v->updated_at}}</td>
                     <td>
                         <a href="{{route('template_form.index',['template_id'=>$v->id])}}" class="btn btn-info btn-xs">表单控件</a>
-                        <a href="{{route('template.edit',['id'=>$v->id])}}" class="btn btn-info btn-xs">编辑</a>
-                        <a href="javascript:;" data-href="{{route('template.destroy',['id'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
+                        <a href="{{route('template.edit',['template'=>$v->id])}}" class="btn btn-info btn-xs">编辑</a>
+                        <a href="javascript:;" data-href="{{route('template.destroy',['template'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
                     </td>
                   </tr>
                   @endforeach

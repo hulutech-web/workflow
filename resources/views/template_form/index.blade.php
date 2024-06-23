@@ -36,8 +36,8 @@
                     <td>{{$v->sort}}</td>
                     <td>{{$v->created_at}}</td>
                     <td>
-                        <a href="{{route('template_form.edit',['id'=>$v->id])}}" class="btn btn-info btn-xs">编辑</a>
-                        <a href="javascript:;" data-href="{{route('template_form.destroy',['id'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
+                        <a href="{{route('template_form.edit',['template_form'=>$v->id])}}" class="btn btn-info btn-xs">编辑</a>
+                        <a href="javascript:;" data-href="{{route('template_form.destroy',['template_form'=>$v->id])}}" class="btn btn-danger btn-xs delete">删除</a>
                     </td>
                   </tr>
                   @endforeach

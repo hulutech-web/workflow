@@ -17,6 +17,7 @@ class DeptController extends Controller
     public function index()
     {
         $depts=Dept::recursion(Dept::with(['director','manager'])->orderBy('rank','ASC')->get());
+
         return view('dept.index')->with(compact('depts'));
     }
 

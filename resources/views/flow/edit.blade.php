@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <h3>编辑流程</h3>
-        <form action="{{route('flow.update',['id'=>$flow->id])}}" method="POST">
+        <form action="{{route('flow.update',['flow'=>$flow->id])}}" method="POST">
           <div class="form-group">
             <label>流程名</label>
             <input type="text" class="form-control"  name="flow_name" placeholder="流程名称" value="{{$flow->flow_name}}">

@@ -15,12 +15,15 @@ class EmpSeeder extends Seeder
     {
         $data = [
             [
+                "name"=>"葫芦科技1",
                 "email"=>"18090900235@189.cn",
                 "password"=>"admin888",
                 "workno"=>"SYS89757",
                 "dept_id"=>1
             ],
             [
+                "name"=>"葫芦科技2",
+
                 "email"=>"18090900236@189.cn",
                 "password"=>"admin888",
                 "workno"=>"SYS001",
@@ -29,6 +32,7 @@ class EmpSeeder extends Seeder
 
             ],
             [
+                "name"=>"葫芦科技3",
                 "email"=>"18090900237@189.cn",
                 "password"=>"admin888",
                 "workno"=>"SYS002",
@@ -42,5 +46,7 @@ class EmpSeeder extends Seeder
 //            创建用户Emp
             Emp::create($item);
         });
+        //将所有员工的password都改为admin888
+        Emp::Where("id","<>",0)->Update(["password"=>Hash::make("admin888")]);
     }
 }

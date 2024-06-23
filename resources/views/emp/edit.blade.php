@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <h3>编辑员工</h3>
-        <form action="{{route('emp.update',['id'=>$emp->id])}}" method="POST">
+        <form action="{{route('emp.update',['emp'=>$emp->id])}}" method="POST">
           <div class="form-group">
             <label for="name">姓名</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="姓名" required value="{{$emp->name}}">

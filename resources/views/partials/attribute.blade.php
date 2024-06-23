@@ -7,7 +7,7 @@
   <li><a href="#attrStyle">样式</a></li>
 </ul>
 
-<form class="form-horizontal"  method="post" id="flow_attribute" name="flow_attribute" action="{{route('process.update',['id'=>$process->id])}}">
+<form class="form-horizontal"  method="post" id="flow_attribute" name="flow_attribute" action="{{route('process.update',['process'=>$process->id])}}">
   <div class="tab-content">
     <div class="tab-pane active" id="attrBasic">
 

@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <h3>新建流程</h3>
-        <form action="{{route('template.update',['id'=>$template->id])}}" method="POST">
+        <form action="{{route('template.update',['template'=>$template->id])}}" method="POST">
           <div class="form-group">
             <label>模板名称</label>
             <input type="text" class="form-control"  name="template_name" placeholder="模板名称" value="{{$template->template_name}}">

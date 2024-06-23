@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <h3>编辑表单控件</h3>
-        <form action="{{route('template_form.update',['id'=>$template_form->id])}}" method="POST" enctype="multipart/form-data">
+        <form action="{{route('template_form.update',['template_form'=>$template_form->id])}}" method="POST" enctype="multipart/form-data">
           <div class="form-group">
             <label>控件名称</label>
             <input type="text" class="form-control"  name="field_name" placeholder="控件名称" value="{{$template_form->field_name}}">
