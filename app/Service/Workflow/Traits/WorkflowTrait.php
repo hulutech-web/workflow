@@ -33,6 +33,6 @@ trait WorkflowTrait{
             ]);
         }
 
-        $proc->entry->emp->notify(new \App\Notifications\Flowfy(Proc::find($proc->id)));
+//        $proc->entry->emp->notify(new \App\Notifications\Flowfy(Proc::find($proc->id)));
 	}
 }

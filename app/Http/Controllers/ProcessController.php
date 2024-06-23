@@ -157,7 +157,6 @@ class ProcessController extends Controller
                     'position'=>0
                 ]);
             }
-
             $process->update([
                 'process_name'=>$process_name,
                 'style_color'=>$style_color,
@@ -377,7 +376,6 @@ class ProcessController extends Controller
         $next_process=Flowlink::where(['process_id'=>$process->id,'flow_id'=>$process->flow_id,'type'=>'Condition'])->get();
 
         $beixuan_process=Flowlink::where(['flow_id'=>$process->flow_id,'type'=>'Condition'])->where('process_id','<>',$process->id)->whereNotIn('process_id',$next_process->pluck('next_process_id'))->get();
-
         //流程模板 表单字段
         $flow=Flow::findOrFail($process->flow_id);
         $fields=$flow->template?$flow->template->template_form:[];

@@ -73,7 +73,7 @@
                   </td>
                   <td>
                       @if($v->status==-1)
-                      <a href="{{route('entry.edit',['id'=>$v->id])}}" class="btn btn-xs btn-danger">编辑</a>
+                      <a href="{{route('entry.edit',['entry'=>$v->id])}}" class="btn btn-xs btn-danger">编辑</a>
                       <a href="/entry/resend?entry_id={{$v->id}}" class="btn btn-xs btn-warning">重新发起</a>
                       <a href="/entry/cancel?entry_id={{$v->id}}" class="btn btn-xs btn-info">撤销</a>
                       @endif

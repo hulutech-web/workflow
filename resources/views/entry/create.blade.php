@@ -6,7 +6,8 @@
         <h3>{{$flow->flow_name}}</h3>
         <form action="/entry" method="POST" enctype="multipart/form-data">
           <div class="form-group">
-            <label for="title">标题</label>
+            <label for="title" style="color:red;font-size:24px;">
+                <span>*</span>标题</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="标题">
           </div>
           <div class="form-group">

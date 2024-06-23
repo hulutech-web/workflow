@@ -47,7 +47,9 @@
               @endforeach
               
               @foreach($beixuan_process as $v)
-              <option value="{{$v->process_id}}">{{$v->process->process_name}}</option>
+                  @if($v->process)
+                          <option value="{{$v->process_id}}">{{$v->process->process_name}}</option>
+                 @endif
               @endforeach
             </select>
           </div>
